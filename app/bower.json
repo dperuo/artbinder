@@ -1,0 +1,21 @@
+{
+  "name": "artbinder",
+  "version": "0.0.0",
+  "authors": [
+    "dperuo <derek@derekperuo.net>"
+  ],
+  "description": "coding challenge for artbinder",
+  "main": "index.html",
+  "moduleType": [
+    "node"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
