@@ -1,0 +1,12 @@
+
+# Performance Improvements:
+- Move `jquery.common.js` into a `<script>` tag at the bottom of the html document. This will speed up page rendering, especially on mobile devices.
+- Minify and concatenate your JavaScript. Serve one file containing all your scripts. This will speed up page rendering and reduce server calls.
+- Minify and concatenate your CSS. Serve one file containing all your styles. This will speed up page rendering and reduce server calls.
+- Serve 3rd-party libraries from an external CDN. This will speed up page rendering.
+- Prefetch DNS records using `<link rel="dns-prefetch" href="#">`. This will speed up page rendering.
+- Serve scaled images using `<srcset>` or media queries. This could cut data transfter by up to 73%.
+
+# Project Structure
+- Angular best practice recommends seperating controllers, directives and services into seperate files. One controller, directive or service per file.
+-
