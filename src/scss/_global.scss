@@ -1,0 +1,31 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: black;
+  font-family:      'Open Sans', sans-serif;
+}
+
+.container {
+  position:  relative;
+  max-width: 100%;
+  margin:    0 auto;
+
+  @media screen and (min-width: 100em) {
+    max-width: 80%;
+  }
+}
+
+// http://nicolasgallagher.com/micro-clearfix-hack/
+.clearfix {
+  &:before,
+  &:after {
+    content: " ";
+    display: table;
+  }
+
+  &:after {
+    clear: both;
+  }
+}
