@@ -58,6 +58,6 @@ function defaultFn() {
 // --------------- ERROR HANDLING --------------- //
 function errorFn (error) {
   gutil.beep();
-  throw new Error(error);
+  gutil.log(gutil.colors.red(error));
 }
 })(); // IIFE
