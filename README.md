@@ -26,6 +26,7 @@ Coding Challenge for Artbinder.com
 - Backbone.js may be good candidate for this type of dynamic data if jQuery is already a dependency.
 - Angular.js is an excellent alternative to Backbone.js if jQuery is not needed.
 - Dynamic control of this content would allow for dynamic control of styling and layout.
+- I would also swap out my ghetto `.container` with a more robust grid system like Susy Grid.
 
 # Website Review
 ## Performance Improvements
