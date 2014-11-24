@@ -7,30 +7,36 @@ Coding Challenge for Artbinder.com
 ## My Process
 - I like starting projects with two main folders: `app` and `src`.
 - `src` includes all my source material; `app` is for processed files ready for production.
-- I use Gulp.js to automate all my tasks.
+- I use Gulp.js to automate my tasks.
 - Git is my version control of choice.
-- I like Eric Meyer's `reset.css` as my stylesheet reset.
-- My original idea was to use Foundation 5 as the CSS framework.
-- But Foundation is big and clunky, and I opted instead to create a custom `.container` element to contain the HTML.
-- I first coded for global elements like `body {}`, `.container {}` and `.clearfix {}`.
+- I like Eric Meyer's `reset.css` as my stylesheet reset. It's lightweight and less opinionated than `normalize.css`.
+- I experimented with Foundation 5 as the CSS framework for this project.
+- But Foundation proved to be big and clunky.
+- I also experimented with Susy Grid, a lightweight, highly customizable grid framework.
+- But Susy's installation and configuration proved too complex for the time constraint: I didn't want to lose a hour debugging my gulpfile.
+- I opted instead to create a custom `.container` element to contain the HTML.
+- It's a bootleg solution and scales horribly. But it got the job done.
+- I first coded for global CSS elements like `body {}`, `.container {}` and `.clearfix {}`.
 - I then styled the header section to include a CSS cover background at 100% viewport height.
-- The main section begins just below the header and is separated into 3 main feature sections.
+- The main section begins just below the header and is separated into 3 feature sections.
 - Each section uses identical styling for modularity.
-- Each panel inside the feature section is used to link to galleries, artists and exhibitions.
+- Each panel inside the feature section is used as links to galleries, artists and exhibitions.
 - Each panel uses identical styling for modularity.
-- The only difference in panel size, which is currently hard-coded into the CSS.
+- The only difference is panel size, which is currently hard-coded into the CSS.
 
 ## If I Had More Time
 - The site content is currently hard-coded into the HTML.
 - This content should be loaded dynamically for easy updating.
-- Backbone.js may be good candidate for this type of dynamic data if jQuery is already a dependency.
+- Backbone.js may be good candidate for this type of dynamic data if jQuery is already a dependency in the project.
 - Angular.js is an excellent alternative to Backbone.js if jQuery is not needed.
-- Dynamic control of this content would allow for dynamic control of styling and layout.
-- I would also swap out my ghetto `.container` with a more robust grid system like Susy Grid.
+- Dynamic control of this content would allow for dynamic control of styling and layout, allowing 2-, 3-, and 4-panel rows as desired.
+- I would also swap out my ghetto `.container` with a more robust grid system.
+- Susy Grid is still a good candidate for this role, but even something like 960.gs would work.
+- The final grid system and dynamic content controller should be based on the rest of the project and the rest of the development stack.
 
 # Website Review
 ## Performance Improvements
-- Move `jquery.common.js` into a `<script>` tag at the bottom of the html document.
+- Move `jquery.common.js` into a `<script>` tag at the bottom of the HTML document.
 - Minify and concatenate the JavaScript.
 - Minify and concatenate the CSS.
 - Serve one file containing all the scripts.
